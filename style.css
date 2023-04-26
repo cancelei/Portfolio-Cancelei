@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: poppins, sans-serif;
+  list-style-type: none;
+}
+
+/* Font> popping 700 400 600 500 */
+
+.mobile-nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px;
+  color: #7f8cff;
+}
+
+.intro-section {
+  background: url(Assets/intro-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  width: 100%;
+  padding-top: 25%;
+}
+
+.intro-section__title {
+  color: #172b4d;
+  font-weight: 700;
+  padding: 15% 0 0 5%;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: left;
+}
+
+.intro-section__subtitle {
+  color: #344563;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 5% 0 0 5%;
+  text-align: left;
+}
+
+.intro-section__capstext {
+  color: #7f8cff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  padding-left: 5%;
+  padding-top: 5%;
+}
+
+.intro-section__social {
+  display: flex;
+  flex-direction: row;
+  margin: 4%;
+}
+
+.intro-section__social > * {
+  padding: 2%;
+}
