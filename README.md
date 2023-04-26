@@ -2,7 +2,7 @@
 
 <div align="center">
   <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <h3><b>Cancelei's Hello Project</b></h3>
+  <h3><b>Cancelei's Porfolio Option 2 Project</b></h3>
 
 </div>
 
@@ -28,10 +28,10 @@
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-# 📖 Simple Hello Project <a name="about-project"></a>
+# 📖 Portfolio Project Option 2<a name="about-project"></a>
 
 
-**Simple Hello Project** is simple project that includes a HTML file with corresponding CSS styling, and a backend setup that includes specific linters that verify Html/CSS files for auto-merge capability.
+Portfolio Building Project is a website that hosts professional and learning experience information, focusing on WebDeveloper. It contains projects and links to them, contact information, and hardskills including Languages and Frameworks. There are details about Skills that could be handy for a Hiring Decision maker.
 
 ## 🛠 Built With Love and Passion<a name="built-with"></a>
 
@@ -60,8 +60,8 @@
 
 ### Key Features <a name="key-features"></a>
 
-- ** HTML**
-- ** CSS**
+- ** HTML with Nav and Intro Sections**
+- ** CSS to fit styling of each section**
 - ** Linters to automatically check availability to merge on to the main(head) branch.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -84,7 +84,7 @@ Download Project Files from github.
 
 ### Setup
 
-Clone this repository to your desired folder:
+Clone this repository to your desired folder, using code Editor of your choise.
 
 ### Install
 
@@ -98,7 +98,11 @@ N/A
 
 ### Run tests
 
-N/A
+Using Linters:
+
+Commands: npx hint . 
+
+npx Stylelint "**/*.{css,scss}"
 
 ### Deployment
 
@@ -121,13 +125,25 @@ N/A
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-N/A
+- Project Section where the projects will be inserted
+- Contact information with a Functioning contact form
+- Skills Information
+- Animations and other features will be added, including making the page fully accessible.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🤝 Contributing <a name="contributing"></a>
 
-N/A
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the issues page, if there is no known issue, you can co-create it! =)
+
+https://github.com/cancelei/Portfolio-Option-2/issues
+<li><a href="https://github.com/cancelei/Portfolio-Option-2/issues">OFFICIAL ISSUE PAGE</a></li>
+
+To contribute, select or create a new branch and commit to it. The next step would be opening a Pull Request (PR).
+
+At this step you can send me a Slack message if needed.
 
 ## ⭐️ Show your support <a name="support"></a>
 
@@ -138,7 +154,7 @@ N/A
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-Ed and Jav helped me in concluding this project, they are part of my current working and standup teams.
+Cohort 18 & 20, especial names appear below this text.
 
 ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
 
