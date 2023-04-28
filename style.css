@@ -18,7 +18,7 @@
 }
 
 .intro-section__headtitle {
-  color: #6070FF;
+  color: #6070ff;
   text-decoration: none;
   font-weight: 700;
   font-size: 18px;
@@ -27,19 +27,16 @@
 }
 
 .intro-section {
-  background-color: gray;
   background: url(Assets/intro-background-mobile.svg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 80vh;
   width: 100%;
   padding-top: 25%;
-  border-bottom-left-radius: 10px;
-  border-bottom-left-radius: ;
 }
 
 .intro-section__title {
-  color: #172B4D;
+  color: #172b4d;
   font-weight: 700;
   padding: 15% 2% 0 5%;
   font-size: 40px;
