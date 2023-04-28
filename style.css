@@ -33,6 +33,7 @@
   height: 80vh;
   width: 100%;
   padding-top: 25%;
+  border-bottom-left-radius: 1rem;
 }
 
 .intro-section__title {
@@ -75,4 +76,68 @@
 
 .intro-section__social > * {
   padding: 2%;
+}
+
+.project__section {
+  display: flex;
+  flex-direction: column;
+  background: #e5e5e5;
+  padding: 5rem 0 5rem 0;
+}
+
+.project__card {
+  margin: 5%;
+  padding: 3%;
+  border: solid 1px #dfe1e6;
+  border-radius: 1rem;
+  background: #ffffff;
+}
+
+.card__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+.card__description {
+  color: #344563;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.tag__parent {
+  display: flex;
+  flex-direction: row;
+  margin: 5% 0 5% 2.5%;
+}
+
+.tag__parent > * {
+  color: #6070FF;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  background: #ebedff;
+  border-radius: 0.5rem;
+  margin: 0 1% 0 1%;
+  padding: 1%;
+}
+
+.button__std {
+  font-weight: 500;
+font-size: 17px;
+line-height: 24px;
+color: #396DF2;
+align-items: center;
+text-align: center;
+letter-spacing: 0.03em;
+border: 1px solid #6070ff;
+border-radius: 0.5rem;
+background: #ffffff;
+padding: 0.5rem;
 }
