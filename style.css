@@ -17,23 +17,38 @@
   color: #7f8cff;
 }
 
+.intro-section__headtitle {
+  color: #6070FF;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  padding: 5% 0 0 3%;
+}
+
 .intro-section {
+  background-color: gray;
   background: url(Assets/intro-background-mobile.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
   height: 80vh;
   width: 100%;
   padding-top: 25%;
+  border-bottom-left-radius: 10px;
+  border-bottom-left-radius: ;
 }
 
 .intro-section__title {
-  color: #172b4d;
+  color: #172B4D;
   font-weight: 700;
-  padding: 15% 0 0 5%;
+  padding: 15% 2% 0 5%;
   font-size: 40px;
   line-height: 52px;
   text-align: left;
+}
+
+.hamburguer-menu {
+  padding: 5%;
 }
 
 .intro-section__subtitle {
@@ -41,7 +56,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  padding: 5% 0 0 5%;
+  padding: 5% 2% 0 5%;
   text-align: left;
 }
 
