@@ -266,15 +266,12 @@
 .language-flex2 > * {
   padding-left: 2%;
   font-weight: 500;
-font-size: 15px;
-line-height: 20px;
-color: #253858;
-align-self: center;
+  font-size: 15px;
+  line-height: 20px;
+  color: #253858;
+  align-self: center;
 }
 
 .separator {
   background: white;
 }
-
-
-
