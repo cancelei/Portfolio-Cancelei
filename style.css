@@ -5,6 +5,7 @@
   text-align: center;
   font-family: poppins, sans-serif;
   list-style-type: none;
+  background: #e5e5e5;
 }
 
 /* Font> popping 700 400 600 500 */
@@ -13,8 +14,9 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 10px;
+  padding: 10px;
   color: #7f8cff;
+  background: #ffffff;
 }
 
 .intro-section__headtitle {
@@ -24,29 +26,30 @@
   font-size: 18px;
   line-height: 20px;
   padding: 5% 0 0 3%;
+  background: #ffffff;
 }
 
 .intro-section {
-  background: url(Assets/intro-background-mobile.svg);
-  background-repeat: no-repeat;
+  background: white url(Assets/intro-background-mobile.svg) no-repeat center center;
   background-size: cover;
-  height: 80vh;
   width: 100%;
-  padding-top: 25%;
+  padding: 25% 5% 25% 5%;
   border-bottom-left-radius: 1rem;
 }
 
 .intro-section__title {
   color: #172b4d;
   font-weight: 700;
-  padding: 15% 2% 0 5%;
+  padding: 15% 0 0 0;
   font-size: 40px;
   line-height: 52px;
   text-align: left;
+  background: transparent;
 }
 
 .hamburguer-menu {
   padding: 5%;
+  background: #ffffff;
 }
 
 .intro-section__subtitle {
@@ -54,8 +57,9 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  padding: 5% 2% 0 5%;
+  padding: 5% 0 0 0;
   text-align: left;
+  background: transparent;
 }
 
 .intro-section__capstext {
@@ -64,32 +68,39 @@
   font-size: 16px;
   line-height: 24px;
   text-align: left;
-  padding-left: 5%;
   padding-top: 5%;
+  background: transparent;
 }
 
 .intro-section__social {
   display: flex;
   flex-direction: row;
-  margin: 4%;
+  padding: 4% 4% 4% 0;
+  background: transparent;
 }
 
-.intro-section__social > * {
+.intro-section__social > li {
   padding: 2%;
+  background: transparent;
 }
 
 .project__section {
   display: flex;
   flex-direction: column;
-  background: #e5e5e5;
   padding: 5rem 0 5rem 0;
 }
 
 .project__card {
   margin: 5%;
-  padding: 3%;
+  padding: 5%;
   border: solid 1px #dfe1e6;
   border-radius: 1rem;
+  background: #ffffff;
+}
+
+.card__img {
+  width: 100%;
+  height: auto;
   background: #ffffff;
 }
 
@@ -99,6 +110,36 @@
   font-size: 32px;
   line-height: 44px;
   color: #172b4d;
+  text-align: left;
+  background: #ffffff;
+}
+
+.card__details {
+  display: flex;
+  flex-direction: row;
+  margin: 0 5% 2% 0;
+  background: #ffffff;
+}
+
+.card__details > * {
+  padding-right: 3.5%;
+  background: #ffffff;
+}
+
+.details__title {
+  color: #344563;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  background: #ffffff;
+}
+
+.details__text {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #7A869A;
+  background: #ffffff;
 }
 
 .card__description {
@@ -107,12 +148,19 @@
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
+  text-align: left;
+  background: #ffffff;
 }
 
 .tag__parent {
   display: flex;
   flex-direction: row;
-  margin: 5% 0 5% 2.5%;
+  margin: 5% 0 5% 0;
+  background: #ffffff;
+}
+
+.social {
+  background: transparent;; !important
 }
 
 .tag__parent > * {
@@ -124,20 +172,64 @@
   letter-spacing: 0.03em;
   background: #ebedff;
   border-radius: 0.5rem;
-  margin: 0 1% 0 1%;
-  padding: 1%;
+  margin: 0 3% 0 0;
+  padding: 1.5% 4% 1.5% 4%;
 }
 
 .button__std {
   font-weight: 500;
-font-size: 17px;
-line-height: 24px;
-color: #396DF2;
-align-items: center;
-text-align: center;
-letter-spacing: 0.03em;
-border: 1px solid #6070ff;
-border-radius: 0.5rem;
-background: #ffffff;
-padding: 0.5rem;
+  font-size: 17px;
+  line-height: 24px;
+  color: #396DF2;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  border: 1px solid #6070ff;
+  border-radius: 0.5rem;
+  background: #ffffff;
+  padding: 0.5rem;
 }
+
+.about__section {
+  padding: 25% 5% 25% 5%;
+  border-top-right-radius: 25px;
+  background: #ffffff;
+}
+
+.about__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: left;
+  color: #172B4D;
+  background: #ffffff;
+}
+
+.about__subtitle {
+  text-align: left;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  background: #ffffff;
+}
+
+.about__button--parent {
+  display: flex;
+  flex-direction: row;
+  background: #ffffff;
+}
+
+.btn:hover,
+.btn:focus {
+  color: #FFFFFF;
+  background: #6070FF;
+  box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+}
+
+.btn:active {
+  background: #2230D2;
+  color: #FFFFFF;
+}
+
