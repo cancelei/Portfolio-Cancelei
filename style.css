@@ -16,7 +16,7 @@
   justify-content: space-between;
   padding: 10px;
   color: #7f8cff;
-  background: #ffffff;
+  background: #fff;
 }
 
 .intro-section__headtitle {
@@ -26,7 +26,7 @@
   font-size: 18px;
   line-height: 20px;
   padding: 5% 0 0 3%;
-  background: #ffffff;
+  background: #fff;
 }
 
 .intro-section {
@@ -49,7 +49,7 @@
 
 .hamburguer-menu {
   padding: 5%;
-  background: #ffffff;
+  background: #fff;
 }
 
 .intro-section__subtitle {
@@ -95,13 +95,13 @@
   padding: 5%;
   border: solid 1px #dfe1e6;
   border-radius: 1rem;
-  background: #ffffff;
+  background: #fff;
 }
 
 .card__img {
   width: 100%;
   height: auto;
-  background: #ffffff;
+  background: #fff;
 }
 
 .card__title {
@@ -111,19 +111,19 @@
   line-height: 44px;
   color: #172b4d;
   text-align: left;
-  background: #ffffff;
+  background: #fff;
 }
 
 .card__details {
   display: flex;
   flex-direction: row;
   margin: 0 5% 2% 0;
-  background: #ffffff;
+  background: #fff;
 }
 
 .card__details > * {
   padding-right: 3.5%;
-  background: #ffffff;
+  background: #fff;
 }
 
 .details__title {
@@ -131,15 +131,15 @@
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
-  background: #ffffff;
+  background: #fff;
 }
 
 .details__text {
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
-  color: #7A869A;
-  background: #ffffff;
+  color: #7a869a;
+  background: #fff;
 }
 
 .card__description {
@@ -149,14 +149,14 @@
   font-size: 15px;
   line-height: 24px;
   text-align: left;
-  background: #ffffff;
+  background: #fff;
 }
 
 .tag__parent {
   display: flex;
   flex-direction: row;
   margin: 5% 0 5% 0;
-  background: #ffffff;
+  background: #fff;
 }
 
 .social {
@@ -164,8 +164,7 @@
 }
 
 .tag__parent > * {
-  color: #6070FF;
-  border-radius: 8px;
+  color: #6070ff;
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
@@ -180,20 +179,20 @@
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  color: #396DF2;
+  color: #396df2;
   align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
   border: 1px solid #6070ff;
   border-radius: 0.5rem;
-  background: #ffffff;
+  background: #fff;
   padding: 0.5rem;
 }
 
 .about__section {
   padding: 25% 5% 25% 5%;
   border-top-right-radius: 25px;
-  background: #ffffff;
+  background: #fff;
 }
 
 .about__title {
@@ -202,8 +201,8 @@
   font-size: 40px;
   line-height: 52px;
   text-align: left;
-  color: #172B4D;
-  background: #ffffff;
+  color: #172b4d;
+  background: #fff;
 }
 
 .about__subtitle {
@@ -212,23 +211,23 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  background: #ffffff;
+  background: #fff;
 }
 
 .about__button--parent {
   display: flex;
   flex-direction: row;
-  background: #ffffff;
+  background: #fff;
 }
 
 .btn:hover,
 .btn:focus {
-  color: #FFFFFF;
-  background: #6070FF;
-  box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+  color: #fff;
+  background: #6070ff;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
 }
 
 .btn:active {
-  background: #2230D2;
-  color: #FFFFFF;
+  background: #2230d2;
+  color: #fff;
 }
