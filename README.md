@@ -60,7 +60,7 @@ Portfolio Building Project is a website that hosts professional and learning exp
 
 ### Key Features <a name="key-features"></a>
 
-- ** HTML with Nav and Intro Sections**
+- ** HTML with Nav, Intro, Recent Project and About Me Sections**
 - ** CSS to fit styling of each section**
 - ** Linters to automatically check availability to merge on to the main(head) branch.**
 
@@ -125,9 +125,8 @@ N/A
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- Project Section where the projects will be inserted
-- Contact information with a Functioning contact form
-- Skills Information
+- Languages & Skills Information
+- Contact information Section with a Functioning contact form
 - Animations and other features will be added, including making the page fully accessible.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -138,7 +137,6 @@ Contributions, issues, and feature requests are welcome!
 
 Feel free to check the issues page, if there is no known issue, you can co-create it! =)
 
-https://github.com/cancelei/Portfolio-Option-2/issues
 <li><a href="https://github.com/cancelei/Portfolio-Option-2/issues">OFFICIAL ISSUE PAGE</a></li>
 
 To contribute, select or create a new branch and commit to it. The next step would be opening a Pull Request (PR).
@@ -156,9 +154,9 @@ N/A
 
 Cohort 18 & 20, especial names appear below this text.
 
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
+<!-- ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
 
-> N/A
+> N/A -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
