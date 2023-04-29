@@ -34,7 +34,7 @@
   background-size: cover;
   width: 100%;
   padding: 25% 5% 25% 5%;
-  border-bottom-left-radius: 1rem;
+  border-bottom-left-radius: 5rem;
 }
 
 .intro-section__title {
@@ -85,8 +85,7 @@
 }
 
 .project__section {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   padding: 5rem 0 5rem 0;
 }
 
@@ -180,7 +179,7 @@
   font-size: 17px;
   line-height: 24px;
   color: #396df2;
-  align-items: center;
+  align-items: left;
   text-align: center;
   letter-spacing: 0.03em;
   border: 1px solid #6070ff;
@@ -191,7 +190,7 @@
 
 .about__section {
   padding: 25% 5% 25% 5%;
-  border-top-right-radius: 25px;
+  border-top-right-radius: 5rem;
   background: #fff;
 }
 
@@ -231,3 +230,51 @@
   background: #2230d2;
   color: #fff;
 }
+
+.language-flex {
+  margin: 9% 5% 5% 2%;
+  display: flex;
+  justify-content: space-between;
+  background: white;
+}
+
+.m-25_10 {
+  margin-top: 25%;
+  margin-bottom: 10%;
+}
+
+.language-flex > * {
+  background: white;
+}
+
+.language {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.language-flex2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  margin: 5% 2% 0 2%;
+  border-radius: 0.5rem;
+  padding: 2%;
+}
+
+.language-flex2 > * {
+  padding-left: 2%;
+  font-weight: 500;
+font-size: 15px;
+line-height: 20px;
+color: #253858;
+align-self: center;
+}
+
+.separator {
+  background: white;
+}
+
+
+
