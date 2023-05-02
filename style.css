@@ -335,10 +335,13 @@ padding-bottom: 20%;
   justify-content: left;
   text-align: center;
   width: 40%;
-
 }
 
 .textarea {
   margin-bottom: 15%;
   padding: 2% 2% 50% 4%;
+}
+
+.bg-white {
+  background: white;
 }
