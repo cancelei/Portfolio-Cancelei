@@ -278,9 +278,10 @@
 
 .contact-form-section {
   background: #6070ff url(Assets/mobilecontactme-mobile-bg.svg) no-repeat center center;
-  background-size: cover;
+  background-size:60%;
+  background-position: 100% 20%;
   width: 100%;
-  padding: 40% 5% 40% 5%;
+  padding: 9% 6% 0 ;
   border-top-left-radius: 5rem;
 }
 
@@ -332,7 +333,9 @@ padding-bottom: 20%;
 
 .form-parent :last-child {
   justify-content: left;
-  text-align: left;
+  text-align: center;
+  width: 40%;
+
 }
 
 .textarea {
