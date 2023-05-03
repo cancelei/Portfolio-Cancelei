@@ -60,7 +60,8 @@ Portfolio Building Project is a website that hosts professional and learning exp
 
 ### Key Features <a name="key-features"></a>
 
-- ** HTML with Nav, Intro, Recent Project and About Me Sections**
+- ** HTML with Nav, Intro, Recent Project, About Me Sections, Contact Form all for Mobile Devices**
+- ** Contact form using ThirdParty service called Formspree as a Backend service.**
 - ** CSS to fit styling of each section**
 - ** Linters to automatically check availability to merge on to the main(head) branch.**
 
@@ -110,11 +111,11 @@ N/A
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 👥 Authors <a name="authors"></a>
+## 👥 Author <a name="authors"></a>
 
 > Mention all of the collaborators of this project.
 
-👤 **Author Glauber Bannwart**
+👤 **Glauber Bannwart**
 
 - GitHub: [@cancelei](https://github.com/cancelei)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/gbannwart)
@@ -125,9 +126,9 @@ N/A
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- Languages & Skills Information
-- Contact information Section with a Functioning contact form
-- Animations and other features will be added, including making the page fully accessible.
+- Desktop Version of all sections available as Mobile version.
+- Animations
+- Making the Page fully accessible.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -138,6 +139,18 @@ Contributions, issues, and feature requests are welcome!
 Feel free to check the issues page, if there is no known issue, you can co-create it! =)
 
 <li><a href="https://github.com/cancelei/Portfolio-Option-2/issues">OFFICIAL ISSUE PAGE</a></li>
+
+*Direct Contributing Authors:*
+
+👤 **Reza Merzaie**
+
+- GitHub: [@Gh-Reza](https://github.com/Gh-Rezae)
+
+
+👤 **Mohamed Roshdy Elkhadragy**
+
+- GitHub: [@MohamedRoshdy2021](https://github.com/MohamedRoshdy2021)
+
 
 To contribute, select or create a new branch and commit to it. The next step would be opening a Pull Request (PR).
 
