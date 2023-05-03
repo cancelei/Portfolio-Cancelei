@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   text-align: center;
-  font-family: poppins, sans-serif;
+  font-family: 'Poppins', sans-serif;
   list-style-type: none;
   background: #e5e5e5;
 }
@@ -52,7 +52,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 5% 5% 5% 5%;
+    padding: 2% 12% 2% 5%;
     background: #fff;
   }
 
@@ -64,7 +64,7 @@
   }
 
   .menuoptions {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 1rem;
@@ -80,12 +80,21 @@
   }
 }
 
+/* Section Introduction */
+
 .intro-section {
   background: white url(Assets/intro-background-mobile.svg) no-repeat center center;
   background-size: cover;
   width: 100%;
   padding: 25% 5% 25% 5%;
   border-bottom-left-radius: 5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-section {
+  background: white url(Assets/Desktop/IntroDesktopBG.svg) no-repeat center center;
+  padding: 5% 7% 5% 7%;
+  }
 }
 
 .intro-section__title {
@@ -129,6 +138,37 @@
   padding: 2%;
   background: transparent;
 }
+
+
+@media screen and (min-width: 768px) {
+  .intro-section__title {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    padding: 10% 0 0 15%;
+  }
+
+  .intro-section__subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    line-break: 30ch;
+    padding: 2% 20% 0 15%;
+  }
+
+  .intro-section__capstext {
+    padding: 2% 0 0 15%;
+  }
+  .intro-section__social {
+    padding: 2% 4% 10% 13%;
+  }
+}
+
+/* Project Section */
 
 .project__section {
   display: grid;
