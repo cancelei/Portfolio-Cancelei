@@ -19,14 +19,65 @@
   background: #fff;
 }
 
+.hamburguer-menu {
+  padding: 5%;
+  background: #fff;
+}
+
+/* Disables desktop menu on mobile */
+
+.menu-desk {  
+  display: none;
+}
+
 .intro-section__headtitle {
   color: #6070ff;
   text-decoration: none;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  padding: 5% 0 0 3%;
+  padding: 0 0 0 3%;
   background: #fff;
+  align-self: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-nav-bar {
+    display: none;
+  }
+
+  .menu-desk {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5% 5% 5% 5%;
+    background: #fff;
+  }
+
+  .intro-section__menuoptions {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    background: #fff;
+  }
+
+  .menuoptions {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    color: #344563;
+    text-decoration: none;
+    background: #fff;
+  }
+
+  .menuoptions {
+    padding-left: 30%;
+    align-self: center;
+  }
 }
 
 .intro-section {
@@ -45,11 +96,6 @@
   line-height: 52px;
   text-align: left;
   background: transparent;
-}
-
-.hamburguer-menu {
-  padding: 5%;
-  background: #fff;
 }
 
 .intro-section__subtitle {
