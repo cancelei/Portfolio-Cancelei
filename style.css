@@ -36,7 +36,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  padding: 0 0 0 3%;
+  padding: 0 0 0 5%;
   background: #fff;
   align-self: center;
   align-items: center;
@@ -139,7 +139,6 @@
   background: transparent;
 }
 
-
 @media screen and (min-width: 768px) {
   .intro-section__title {
     font-family: 'Poppins', sans-serif;
@@ -163,6 +162,7 @@
   .intro-section__capstext {
     padding: 2% 0 0 15%;
   }
+
   .intro-section__social {
     padding: 2% 4% 10% 13%;
   }
@@ -189,6 +189,49 @@
   background: #fff;
 }
 
+.desktop_card_division {
+  background: white;
+}
+
+/* Card Structure, Flexbox and Reverse Direction */
+
+@media screen and (min-width: 768px) {
+  .project__section {
+    padding: 2%;
+  }
+
+  .project__card {
+    display: flex;
+    /* flex-grow: 1; */
+    margin: 2%;
+    padding: 2%;
+  }
+
+  .reverse {
+    flex-direction: row-reverse;
+  }
+
+  .card__img {
+    /* margin: 2%; */
+    width: 52%;
+  }
+
+  .desktop_card_division {
+    /* width: 100%; */
+    /* height: auto; */
+    background: #fff;
+    margin: 2%;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start
+  }
+
+  .desktop_card_division > * {
+    padding-bottom: 2%;
+  }
+}
+
 .card__title {
   font-style: normal;
   font-weight: 700;
@@ -207,7 +250,7 @@
 }
 
 .card__details > * {
-  padding-right: 3.5%;
+  margin-right: 3.5%;
   background: #fff;
 }
 
@@ -273,6 +316,52 @@
   background: #fff;
   padding: 0.5rem;
 }
+
+@media screen and (min-width: 768px) {
+  .card__title {
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .card__details {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .details__title {
+    font-weight: 500;
+  }
+
+  .details__text {
+    font-weight: 400;
+  }
+
+  .card__description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .tag {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .button__std {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  .card__details > img {
+    width: 0.5rem;
+    height: 0.5rem;
+    align-self: center;
+  }
+}
+
+/* About Section Mobile */
 
 .about__section {
   padding: 25% 5% 25% 5%;
