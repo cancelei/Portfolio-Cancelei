@@ -60,9 +60,9 @@ Portfolio Building Project is a website that hosts professional and learning exp
 
 ### Key Features <a name="key-features"></a>
 
-- ** HTML with Nav, Intro, Recent Project, About Me Sections, Contact Form all for Mobile Devices**
+- ** HTML with Nav, Intro, Recent Project, About Me Sections, Contact Form all for Mobile and Desktop Devices**
 - ** Contact form using ThirdParty service called Formspree as a Backend service.**
-- ** CSS to fit styling of each section**
+- ** CSS to fit styling of each section and Device Option**
 - ** Linters to automatically check availability to merge on to the main(head) branch.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -126,9 +126,8 @@ N/A
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- Desktop Version of all sections available as Mobile version.
-- Animations
-- Making the Page fully accessible.
+- Animations and Transitions.
+- Making the Page fully accessible with best practices.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
