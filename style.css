@@ -26,7 +26,7 @@
 
 /* Disables desktop menu on mobile */
 
-.menu-desk {  
+.menu-desk {
   display: none;
 }
 
@@ -72,9 +72,6 @@
     color: #344563;
     text-decoration: none;
     background: #fff;
-  }
-
-  .menuoptions {
     padding-left: 30%;
     align-self: center;
   }
@@ -92,8 +89,8 @@
 
 @media screen and (min-width: 768px) {
   .intro-section {
-  background: white url(Assets/Desktop/IntroDesktopBG.svg) no-repeat center center;
-  padding: 5% 7% 5% 7%;
+    background: white url(Assets/Desktop/IntroDesktopBG.svg) no-repeat center center;
+    padding: 5% 7% 5% 7%;
   }
 }
 
@@ -202,7 +199,6 @@
 
   .project__card {
     display: flex;
-    /* flex-grow: 1; */
     margin: 2%;
     padding: 2%;
   }
@@ -212,19 +208,16 @@
   }
 
   .card__img {
-    /* margin: 2%; */
     width: 52%;
   }
 
   .desktop_card_division {
-    /* width: 100%; */
-    /* height: auto; */
     background: #fff;
     margin: 2%;
     width: 48%;
     display: flex;
     flex-direction: column;
-    justify-content:flex-start
+    justify-content: flex-start;
   }
 
   .desktop_card_division > * {
@@ -455,7 +448,6 @@
 }
 
 @media screen and (min-width: 768px) {
-
   .about__section {
     display: flex;
     flex-direction: row;
@@ -478,11 +470,19 @@
 
   .language-flex2 {
     flex-direction: column;
+    justify-content: space-between;
+    align-content: left;
+  }
+
+  .language-flex2 > img {
+    padding-bottom: 10%;
+    align-items: left;
   }
 
   .desktop-language-rows {
     display: flex;
     flex-direction: row;
+    width: 120%;
   }
 
   .desktop-language-rows > * {
@@ -490,9 +490,10 @@
   }
 
   .separator {
-    width: 100%;
+    width: 98%;
   }
 }
+
 /* Contact Form Section Mobile */
 
 .contact-form-section {
@@ -567,6 +568,7 @@
 @media screen and (min-width: 768px) {
   .contact-form-section {
     background: #6070ff url(Assets/Desktop/ContactFormDesktopBG.svg) no-repeat center center;
+    padding: 2% 5% 0;
   }
 
   .contact-desk {
@@ -574,5 +576,19 @@
     background: transparent;
     margin-left: 25%;
     margin-right: 25%;
+  }
+
+  .btn-desk {
+    align-self: center;
+  }
+
+  .form-parent :last-child {
+    justify-content: left;
+    text-align: center;
+    width: 25%;
+  }
+
+  .textarea {
+    margin-bottom: 5%;
   }
 }
