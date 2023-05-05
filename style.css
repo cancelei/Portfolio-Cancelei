@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   text-align: center;
-  font-family: poppins, sans-serif;
+  font-family: 'Poppins', sans-serif;
   list-style-type: none;
   background: #e5e5e5;
 }
@@ -19,15 +19,65 @@
   background: #fff;
 }
 
+.hamburguer-menu {
+  padding: 5%;
+  background: #fff;
+}
+
+/* Disables desktop menu on mobile */
+
+.menu-desk {
+  display: none;
+}
+
 .intro-section__headtitle {
   color: #6070ff;
   text-decoration: none;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  padding: 5% 0 0 3%;
+  padding: 0 0 0 5%;
   background: #fff;
+  align-self: center;
+  align-items: center;
+  text-align: center;
 }
+
+@media screen and (min-width: 768px) {
+  .mobile-nav-bar {
+    display: none;
+  }
+
+  .menu-desk {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2% 12% 2% 5%;
+    background: #fff;
+  }
+
+  .intro-section__menuoptions {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    background: #fff;
+  }
+
+  .menuoptions {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    color: #344563;
+    text-decoration: none;
+    background: #fff;
+    padding-left: 30%;
+    align-self: center;
+  }
+}
+
+/* Section Introduction */
 
 .intro-section {
   background: white url(Assets/intro-background-mobile.svg) no-repeat center center;
@@ -35,6 +85,13 @@
   width: 100%;
   padding: 25% 5% 25% 5%;
   border-bottom-left-radius: 5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-section {
+    background: white url(Assets/Desktop/IntroDesktopBG.svg) no-repeat center center;
+    padding: 5% 7% 5% 7%;
+  }
 }
 
 .intro-section__title {
@@ -45,11 +102,6 @@
   line-height: 52px;
   text-align: left;
   background: transparent;
-}
-
-.hamburguer-menu {
-  padding: 5%;
-  background: #fff;
 }
 
 .intro-section__subtitle {
@@ -84,6 +136,37 @@
   background: transparent;
 }
 
+@media screen and (min-width: 768px) {
+  .intro-section__title {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    padding: 10% 0 0 15%;
+  }
+
+  .intro-section__subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    line-break: 30ch;
+    padding: 2% 20% 0 15%;
+  }
+
+  .intro-section__capstext {
+    padding: 2% 0 0 15%;
+  }
+
+  .intro-section__social {
+    padding: 2% 4% 10% 13%;
+  }
+}
+
+/* Project Section */
+
 .project__section {
   display: grid;
   padding: 5rem 0 5rem 0;
@@ -101,6 +184,45 @@
   width: 100%;
   height: auto;
   background: #fff;
+}
+
+.desktop_card_division {
+  background: white;
+}
+
+/* Card Structure, Flexbox and Reverse Direction */
+
+@media screen and (min-width: 768px) {
+  .project__section {
+    padding: 2%;
+  }
+
+  .project__card {
+    display: flex;
+    margin: 2%;
+    padding: 2%;
+  }
+
+  .reverse {
+    flex-direction: row-reverse;
+  }
+
+  .card__img {
+    width: 52%;
+  }
+
+  .desktop_card_division {
+    background: #fff;
+    margin: 2%;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .desktop_card_division > * {
+    padding-bottom: 2%;
+  }
 }
 
 .card__title {
@@ -121,7 +243,7 @@
 }
 
 .card__details > * {
-  padding-right: 3.5%;
+  margin-right: 3.5%;
   background: #fff;
 }
 
@@ -187,6 +309,52 @@
   background: #fff;
   padding: 0.5rem;
 }
+
+@media screen and (min-width: 768px) {
+  .card__title {
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .card__details {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .details__title {
+    font-weight: 500;
+  }
+
+  .details__text {
+    font-weight: 400;
+  }
+
+  .card__description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .tag {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .button__std {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  .card__details > img {
+    width: 0.5rem;
+    height: 0.5rem;
+    align-self: center;
+  }
+}
+
+/* About Section Mobile */
 
 .about__section {
   padding: 25% 5% 25% 5%;
@@ -272,9 +440,61 @@
   align-self: center;
 }
 
-.separator {
+.separator,
+.About-desktop,
+.language-desktop,
+.desktop-language-rows {
   background: white;
 }
+
+@media screen and (min-width: 768px) {
+  .about__section {
+    display: flex;
+    flex-direction: row;
+    padding: 8% 4% 8% 4%;
+  }
+
+  .About-desktop,
+  .language-desktop {
+    width: 50%;
+  }
+
+  .social-desk {
+    padding: 3% 0;
+  }
+
+  .m-25_10 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .language-flex2 {
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: left;
+  }
+
+  .language-flex2 > img {
+    padding-bottom: 10%;
+    align-items: left;
+  }
+
+  .desktop-language-rows {
+    display: flex;
+    flex-direction: row;
+    width: 120%;
+  }
+
+  .desktop-language-rows > * {
+    width: 20%;
+  }
+
+  .separator {
+    width: 98%;
+  }
+}
+
+/* Contact Form Section Mobile */
 
 .contact-form-section {
   background: #6070ff url(Assets/mobilecontactme-mobile-bg.svg) no-repeat center center;
@@ -343,4 +563,32 @@
 
 .bg-white {
   background: white;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-form-section {
+    background: #6070ff url(Assets/Desktop/ContactFormDesktopBG.svg) no-repeat center center;
+    padding: 2% 5% 0;
+  }
+
+  .contact-desk {
+    width: 50%;
+    background: transparent;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+
+  .btn-desk {
+    align-self: center;
+  }
+
+  .form-parent :last-child {
+    justify-content: left;
+    text-align: center;
+    width: 25%;
+  }
+
+  .textarea {
+    margin-bottom: 5%;
+  }
 }
