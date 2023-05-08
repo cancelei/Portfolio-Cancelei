@@ -30,9 +30,6 @@
   display: none;
 }
 
-
-
-
 .intro-section__headtitle {
   color: #6070ff;
   text-decoration: none;
@@ -44,8 +41,6 @@
   align-self: center;
   align-items: center;
   text-align: center;
-
-  
 }
 
 @media screen and (min-width: 768px) {
