@@ -25,7 +25,6 @@
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
 # 📖 Portfolio Project Option 2<a name="about-project"></a>
@@ -62,14 +61,14 @@ Portfolio Building Project is a website that hosts professional and learning exp
 
 - ** HTML with Nav, Intro, Recent Project, About Me Sections, Contact Form all for Mobile and Desktop Devices**
 - ** Contact form using ThirdParty service called Formspree as a Backend service.**
-- ** CSS to fit styling of each section and Device Option**
+- ** Hosted Using Github Pages**
 - ** Linters to automatically check availability to merge on to the main(head) branch.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- N/A
+- [LINK](https://cancelei.github.io/Portfolio-Option-2/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
