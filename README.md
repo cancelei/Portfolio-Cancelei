@@ -25,7 +25,6 @@
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
 # 📖 Portfolio Project Option 2<a name="about-project"></a>
@@ -60,16 +59,16 @@ Portfolio Building Project is a website that hosts professional and learning exp
 
 ### Key Features <a name="key-features"></a>
 
-- ** HTML with Nav, Intro, Recent Project, About Me Sections, Contact Form all for Mobile and Desktop Devices**
+- ** HTML with Nav, Intro, Recent Project, About Me Sections, Contact Form all for Mobile and Desktop Devices.**
 - ** Contact form using ThirdParty service called Formspree as a Backend service.**
-- ** CSS to fit styling of each section and Device Option**
+- ** Hosted Using Github Pages.**
 - ** Linters to automatically check availability to merge on to the main(head) branch.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- N/A
+- [LINK](https://cancelei.github.io/Portfolio-Option-2/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -89,21 +88,29 @@ Clone this repository to your desired folder, using code Editor of your choise.
 
 ### Install
 
-Install this project with:
+Install Node Package by running:
 
-N/A
+- npm install
 
 ### Usage
 
-N/A
+- In other to use the repo you either to create a branch to create new features.
+- But in order to run the project use the commands below:
+  - npm run build (It will create a production ready file)
+  - npm start (It will run the server on your local machine)
 
-### Run tests
+### Run Linters (Testing)
 
-Using Linters:
+I have added Linters different kinds of Linters to help avoid typos and ensure the best practices of the code base.
+So while using this repository if you need to check your work no matter if you have worked on HTML or CSS, or even JS you can use the commands below.
 
-Commands: npx hint . 
+- To run the linter test on index.html or any HTML file. Use the below command:
+npx hint . 
 
+-To run linter test on Stylesheets (CSS or sass). Use the below command:
 npx Stylelint "**/*.{css,scss}"
+
+
 
 ### Deployment
 
