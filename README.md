@@ -70,6 +70,8 @@ Portfolio Building Project is a website that hosts professional and learning exp
 
 - [LINK](https://cancelei.github.io/Portfolio-Option-2/)
 
+- [Video Explaning the Projects and Challenges.](https://www.loom.com/share/df54b44e458441b681308ef3619ba489)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
