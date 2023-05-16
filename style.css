@@ -8,6 +8,10 @@
   background: #e5e5e5;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Font> popping 700 400 600 500 */
 
 .mobile-nav-bar {
@@ -21,24 +25,26 @@
 
 .hamburguer-menu {
   padding: 5%;
-  background: #fff;
+  background: transparent;
 }
 
 /* JS mobile menu class */
+
 .menu_basic {
   background-color: #2230d2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   visibility: hidden;
 }
 
-.menu_backdrop {
-  background-color: blue;
-  visibility: visible;
-  position: relative;
-  width: 100vw;
-  height: 100vh;
+body.menu-open {
+  overflow: hidden;
 }
 
-.menu__open {
+.menu_open {
   visibility: visible;
 }
 

@@ -19,13 +19,14 @@
   <header>
     <nav class="mobile-nav-bar">
       <a class="intro-section__headtitle" href="">My Logo</a>
-      <img class="hamburguer-menu" src="Assets/Unionhamb.png" alt="mobile menu" onclick="open__menu"></img>
-      <div class="menu_basic menu__backdrop">
-        <button class="close__btn" onclick="menu__close">X</button>
+      <div class="hamburguer-menu" alt="mobile menu" 
+      onclick="menu_open()"><img src="Assets/Unionhamb.png"></div>
+      <div id="menu" class="menu_basic">
+        <button class="close__btn" onclick="menu_close()">X</button>
         <ul>
-          <li href="" onclick="menu__close">Portfolio</li>
-          <li href="" onclick="menu__close">About</li>
-          <li href="" onclick="menu__close">Contact</li>
+          <li><a href="#portfolio" onclick="menu_close()">Portfolio</a></li>
+          <li><a href="#about" onclick="menu_close()">About</a></li>
+          <li><a href="#Contact" onclick="menu_close()">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -67,7 +68,7 @@
 
   <!-- Project Section -->
 
-  <section class="project__section">
+  <section id="portfolio" class="project__section">
     <sub class="project__card">
       <img class="card__img" src="Assets/Snapshoot Portfoliop1.svg">
       <div class="desktop_card_division">
@@ -174,7 +175,7 @@
 
   <!-- About Me section -->
 
-  <section class="about__section">
+  <section id="about" class="about__section">
     <sub class="About-desktop">
       <h2 class="about__title">About Myself</h2>
       <p class="about__subtitle">
@@ -234,7 +235,7 @@
   <!-- Contact Form Section  -->
 
   <div class="bg-white">
-    <section class="contact-form-section">
+    <section id="Contact" class="contact-form-section">
       <div class="contact-desk">
         <h2 class="contact-title">Contact me</h2>
         <p class="contact-paragraph">If you have an application you are interested in developing, a feature that you
@@ -251,6 +252,7 @@
       </div>
     </section>
   </div>
+  <script src="index.js"></script>
 </body>
 
 </html>
