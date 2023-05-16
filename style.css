@@ -25,11 +25,13 @@
 }
 
 /* JS mobile menu class */
-
-.menu__open,
-.menu__backdrop {
+.menu_basic {
   background-color: #2230d2;
   visibility: hidden;
+}
+
+.menu__open {
+  visibility: visible;
 }
 
 /* Disables desktop menu on mobile */
