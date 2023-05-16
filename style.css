@@ -31,21 +31,91 @@ html {
 /* JS mobile menu class */
 
 .menu_basic {
-  background-color: #2230d2;
+  background-color: #6070ff;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   visibility: hidden;
+  mix-blend-mode: multiply;
 }
 
+.close-button-mobile {
+  width: 1rem;
+  height: 1rem;
+}
+
+.mobile-menu-parent {
+  background-color: transparent;
+  mix-blend-mode: multiply;
+}
+
+  
 body.menu-open {
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .menu_open {
   visibility: visible;
+}
+
+
+.mobile-menu-items {
+  background-color: transparent;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: white;
+  text-decoration: none;
+  padding-top: 20%;
+  text-align: left;
+  z-index: 99;
+  padding-left: 5%;
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  background-color: #6070ff;
+  z-index: 99;
+}
+
+.mobile-close {
+  z-index: 101;
+  text-align: right;
+  align-items: right;
+  background-color: #6070ff;
+}
+
+.close {
+  position: absolute;
+  right: 32px;
+  top: 16px;
+  width: 32px;
+  height: 32px;
+  opacity: 1;
+}
+
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 4px;
+  background-color: white;
+}
+
+.close:before {
+  transform: rotate(45deg);
+}
+
+.close:after {
+  transform: rotate(-45deg);
 }
 
 /* Disables desktop menu on mobile */
