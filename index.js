@@ -10,3 +10,7 @@ function menuClose() {
   menu.classList.remove('menu_open');
   body.classList.remove('menu-open');
 }
+
+menuOpen();
+
+setTimeout(menuClose, 1);
