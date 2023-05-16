@@ -30,6 +30,14 @@
   visibility: hidden;
 }
 
+.menu_backdrop {
+  background-color: blue;
+  visibility: visible;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
 .menu__open {
   visibility: visible;
 }
