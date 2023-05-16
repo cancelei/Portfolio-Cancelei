@@ -24,6 +24,14 @@
   background: #fff;
 }
 
+/* JS mobile menu class */
+
+.menu__open,
+.menu__backdrop {
+  background-color: #2230d2;
+  visibility: hidden;
+}
+
 /* Disables desktop menu on mobile */
 
 .menu-desk {

@@ -15,7 +15,15 @@
   <header>
     <nav class="mobile-nav-bar">
       <a class="intro-section__headtitle" href="">My Logo</a>
-      <img class="hamburguer-menu" src="Assets/Unionhamb.png" alt="mobile menu">
+      <button class="hamburguer-menu" src="Assets/Unionhamb.png" alt="mobile menu" onclick="open__menu"></button>
+      <div class="menu__backdrop">
+        <button class="close__btn" onclick="menu__close">X</button>
+        <ul>
+          <li href="" onclick="menu__close">Portfolio</li>
+          <li href="" onclick="menu__close">About</li>
+          <li href="" onclick="menu__close">Contact</li>
+        </ul>
+      </div>
     </nav>
 
     <!-- Menu for desktop devices -->
