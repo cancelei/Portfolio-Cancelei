@@ -63,6 +63,7 @@ Portfolio Building Project is a website that hosts professional and learning exp
 - ** Contact form using ThirdParty service called Formspree as a Backend service.**
 - ** Hosted Using Github Pages.**
 - ** Linters to automatically check availability to merge on to the main(head) branch.**
+- ** Mobile Menu Using JS**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -112,7 +113,8 @@ npx hint .
 -To run linter test on Stylesheets (CSS or sass). Use the below command:
 npx Stylelint "**/*.{css,scss}"
 
-
+- To run linter test on ES Lint (JS). Use the below command:
+npx eslint .
 
 ### Deployment
 
