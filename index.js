@@ -1,5 +1,5 @@
 const menu = document.getElementById('menu');
-const body = document.body;
+const { body } = document;
 
 function menuOpen() {
   menu.classList.add('menu_open');
