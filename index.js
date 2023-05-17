@@ -134,12 +134,108 @@ function createProjectsSection() {
     cardDivisionElement.appendChild(buttonParentElement);
 
     const buttonElement = document.createElement("button");
-    buttonElement.classList.add("button__std", "btn");
+    buttonElement.classList.add("button__std", "btn", "btn__project");
     buttonElement.textContent = "See Project";
     buttonParentElement.appendChild(buttonElement);
 
     projectsContainer.appendChild(projectElement);
   });
+
+  const seeProjectButtons = document.querySelectorAll('.btn__project');
+
+  seeProjectButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const projectIndex = Array.from(seeProjectButtons).indexOf(button);
+      const project = projectsData[projectIndex];
+  
+      // Call a function to open the modal and populate it with project data
+      openModal(project);
+    });
+  });
+
+
+// Part 3 - Pop-up modal
+
+function openModal(project) {
+  const modalContainer = document.getElementById('modal-container');
+  modalContainer.innerHTML = ''; // Clear previous content
+  modalContainer.classList.add("visible");
+
+  const modalContent = document.createElement('div');
+  modalContent.classList.add('modal-content');
+
+  const modalHeader = document.createElement('div');
+  modalHeader.classList.add('modal-header', 'flex', 'row', 'spacebtw');
+  const titleElement = document.createElement('h2');
+  titleElement.classList.add('card__title');
+  const closeButton = document.createElement('button');
+  closeButton.classList.add('close-button');
+
+  modalHeader.appendChild(titleElement);
+  modalHeader.appendChild(closeButton);
+
+  const cardDetails = document.createElement('div');
+  cardDetails.classList.add('card__details');
+  const detailsTitleElement = document.createElement('h4');
+  detailsTitleElement.classList.add('details__title');
+  const separator1 = document.createElement('img');
+  separator1.src = 'Assets/Counterball.svg';
+  separator1.alt = 'separator';
+  const detailsTextElement = document.createElement('h4');
+  detailsTextElement.classList.add('details__text');
+  const separator2 = document.createElement('img');
+  separator2.src = 'Assets/Counterball.svg';
+  separator2.alt = 'separator';
+  const detailsYearElement = document.createElement('h4');
+  detailsYearElement.classList.add('details__year');
+
+  cardDetails.appendChild(detailsTitleElement);
+  cardDetails.appendChild(separator1);
+  cardDetails.appendChild(detailsTextElement);
+  cardDetails.appendChild(separator2);
+  cardDetails.appendChild(detailsYearElement);
+
+  const descriptionLongElement = document.createElement('h4');
+  descriptionLongElement.classList.add('descriptionLong');
+
+  const tagParentElement = document.createElement('ul');
+  tagParentElement.classList.add('tag__parent');
+
+  modalContent.appendChild(modalHeader);
+  modalContent.appendChild(cardDetails);
+  modalContent.appendChild(descriptionLongElement);
+  modalContent.appendChild(tagParentElement);
+
+  modalContainer.appendChild(modalContent);
+
+  // Set the content of the modal using project data
+  titleElement.textContent = project.title;
+  detailsTitleElement.textContent = project.details.title;
+  detailsTextElement.textContent = project.details.text;
+  detailsYearElement.textContent = project.details.year;
+  descriptionLongElement.textContent = project.longDescription;
+
+  // Create tag elements and append to tag parent element
+  project.tags.forEach(tag => {
+    const tagElement = document.createElement('li');
+    tagElement.classList.add('tag');
+    tagElement.textContent = tag;
+    tagParentElement.appendChild(tagElement);
+  });
+
+  // Show the modal
+  modalContainer.classList.add('show');
+}
+
+const closeButton = document.getElementById('close-button');
+
+closeButton.addEventListener('click', function() {
+  const modalContainer = document.getElementById('modal-container');
+
+  // Hide the modal
+  modalContainer.style.display = 'none';
+});
+
 }
 
 window.addEventListener("load", createProjectsSection);

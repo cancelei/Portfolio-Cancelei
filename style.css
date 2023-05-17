@@ -11,6 +11,20 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Basic classes */
+
+.flex {
+  display: flex;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.spacebtw {
+  justify-content: space-between;
+}
+
 /* Font> popping 700 400 600 500 */
 
 .mobile-nav-bar {
@@ -48,7 +62,8 @@ body.menu-open {
   flex-direction: column;
 }
 
-.menu_open {
+.menu_open,
+.visible {
   visibility: visible;
 }
 
@@ -277,7 +292,7 @@ body.menu-open {
   background: white;
 }
 
-/* Card Structure, Flexbox and Reverse Direction */
+/* Project Section Part 2 - Card Structure, Flexbox and Reverse Direction */
 
 @media screen and (min-width: 768px) {
   .project__section {
@@ -441,6 +456,24 @@ body.menu-open {
     height: 0.5rem;
     align-self: center;
   }
+}
+
+/* Project Section Pop-up */
+
+.modal-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  visibility: hidden;
+  z-index: 0;
+  background-color: rgba(0, 0, 255, 0.5);
+  /* backdrop-filter: blur(10px); */
+}
+
+.modal-content {
+  background-color: white;
 }
 
 /* About Section Mobile */
