@@ -342,6 +342,7 @@ body.menu-open {
   background: #fff;
 }
 
+.details__year,
 .details__text {
   font-weight: 600;
   font-size: 13px;
@@ -412,6 +413,7 @@ body.menu-open {
     font-weight: 500;
   }
 
+  .details__year,
   .details__text {
     font-weight: 400;
   }
