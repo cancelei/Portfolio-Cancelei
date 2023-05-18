@@ -141,7 +141,8 @@ function createProjectsSection() {
     projectsContainer.appendChild(projectElement);
   });
 
-  const seeProjectButtons = document.querySelectorAll('.btn__project');
+  
+const seeProjectButtons = document.querySelectorAll('.btn__project');
 
   seeProjectButtons.forEach(button => {
     button.addEventListener('click', function() {
@@ -151,8 +152,6 @@ function createProjectsSection() {
       // Call a function to open the modal and populate it with project data
       openModal(project);
     });
-  });
-
 
 // Part 3 - Pop-up modal
 

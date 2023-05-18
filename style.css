@@ -461,6 +461,8 @@ body.menu-open {
 /* Project Section Pop-up */
 
 .modal-container {
+  padding: 5%;
+  border-radius: 15px;
   position: absolute;
   top: 0;
   left: 0;
