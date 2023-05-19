@@ -382,6 +382,56 @@ body.menu-open {
   background: #fff;
 }
 
+.carddetails__popup {
+  padding: 4% 0 3% 0;
+}
+
+.popupdescription__parent {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-content {
+    padding: 0%;
+    margin: 0;
+  }
+
+  .popupdescription__parent {
+    flex-direction: row;
+  }
+
+  .tagbuttonParent {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+  }
+
+  .descriptionLong {
+    width: 70%;
+    padding-right: 3%;
+  }
+
+  .popupimg {
+    padding: 3%;
+    width: 100%;
+  }
+
+  .carddetails__popup {
+    padding: 1% 0 1% 0;
+  }
+
+  .card__details {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.tagbuttonParent {
+  display: flex;
+  flex-direction: column;
+}
+
 .details__title {
   color: #344563;
   font-weight: 600;
@@ -748,6 +798,10 @@ body.menu-open {
   background: transparent;
 }
 
+.separtorTagButton {
+  padding: 15px 0;
+}
+
 @media screen and (min-width: 768px) {
   .contact-form-section {
     background: #6070ff url(Assets/Desktop/ContactFormDesktopBG.svg) no-repeat center center;
@@ -773,6 +827,16 @@ body.menu-open {
 
   .textarea {
     margin-bottom: 5%;
+  }
+
+  .modal-container {
+    padding: 1%;
+    margin: 0;
+  }
+
+  .modal-content {
+    padding: 2%;
+    margin: 2%;
   }
 }
 

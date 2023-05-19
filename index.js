@@ -24,7 +24,7 @@ setTimeout(menuClose, 1);
 
 const projectsData = [
   {
-    title: 'Tonic1',
+    title: 'Tonic',
     detailsTitle: 'CANOPY',
     detailsText: 'Back End Dev',
     detailsYear: '2015',
@@ -34,7 +34,7 @@ const projectsData = [
     tags: ['HTML', 'CSS', 'Javascript'],
   },
   {
-    title: 'Multi-Post Stories2',
+    title: 'Multi-Post Stories',
     detailsTitle: 'CANOPY',
     detailsText: 'Back End Dev',
     detailsYear: '2015',
@@ -44,7 +44,7 @@ const projectsData = [
     tags: ['HTML', 'CSS', 'Javascript'],
   },
   {
-    title: 'Tonic3',
+    title: 'Tonic',
     detailsTitle: 'CANOPY',
     detailsText: 'Back End Dev',
     detailsYear: '2015',
@@ -54,7 +54,7 @@ const projectsData = [
     tags: ['HTML', 'CSS', 'Javascript'],
   },
   {
-    title: 'Multi-Post Stories4',
+    title: 'Multi-Post Stories',
     detailsTitle: 'CANOPY',
     detailsText: 'Back End Dev',
     detailsYear: '2015',
@@ -181,7 +181,7 @@ function openModal(project) {
   modalHeader.appendChild(closeButtonElement);
 
   const cardDetails = document.createElement('div');
-  cardDetails.classList.add('card__details');
+  cardDetails.classList.add('card__details', 'carddetails__popup');
   const detailsTitleElement = document.createElement('h4');
   detailsTitleElement.classList.add('details__title');
   const separator1 = document.createElement('img');
@@ -204,11 +204,21 @@ function openModal(project) {
   modalContent.append(cardDetails);
 
   const projectimageElement = document.createElement('img');
-  projectimageElement.classList.add('card__img');
+  projectimageElement.classList.add('card__img', 'popupimg');
   projectimageElement.src = project.imageUrl;
+
+  const popupdescriptionParent = document.createElement('div');
+  popupdescriptionParent.classList.add('popupdescription__parent');
+
+  const tagbuttonParent = document.createElement('div');
+  tagbuttonParent.classList.add('tagbuttonParent');
 
   const descriptionLongElement = document.createElement('h4');
   descriptionLongElement.classList.add('descriptionLong');
+
+  const separatorTagButton = document.createElement('img');
+  separatorTagButton.src = 'Assets/Vector 4separatorpopup.png';
+  separatorTagButton.classList.add('separtorTagButton');
 
   const tagParentElement = document.createElement('ul');
   tagParentElement.classList.add('tag__parent');
@@ -216,9 +226,11 @@ function openModal(project) {
   modalContent.appendChild(modalHeader);
   modalContent.appendChild(cardDetails);
   modalContent.appendChild(projectimageElement);
-  modalContent.appendChild(descriptionLongElement);
-  modalContent.appendChild(tagParentElement);
-
+  modalContent.appendChild(popupdescriptionParent);
+  popupdescriptionParent.appendChild(descriptionLongElement);
+  popupdescriptionParent.appendChild(tagbuttonParent);
+  tagbuttonParent.appendChild(tagParentElement);
+  tagbuttonParent.appendChild(separatorTagButton);
   modalContainer.appendChild(modalContent);
 
   // Set the content of the modal using project data
@@ -242,13 +254,13 @@ function openModal(project) {
   const modalbuttonEnd = document.createElement('a');
   modalbuttonEnd.href = 'github.com/pages';
   modalbuttonEnd.target = '_blank';
-  modalbuttonEnd.classList.add('modal-button-end');
+  modalbuttonEnd.classList.add('modal-button-end', 'btn');
   modalbuttonEnd.textContent = 'See live';
 
   const modalbuttonEndGiuthub = document.createElement('a');
   modalbuttonEndGiuthub.href = 'github.com/repo';
   modalbuttonEndGiuthub.target = '_blank';
-  modalbuttonEndGiuthub.classList.add('modal-button-end');
+  modalbuttonEndGiuthub.classList.add('modal-button-end', 'btn');
   modalbuttonEndGiuthub.textContent = 'See source';
 
   const imageModalbuttonendLive = document.createElement('img');
@@ -259,7 +271,7 @@ function openModal(project) {
   imageModalbuttonendGithub.classList.add('modalbuttonend-img');
   imageModalbuttonendGithub.src = 'Assets/Vectorgithubbuttonimg.svg';
 
-  modalContent.append(modalbuttonEndParent);
+  tagbuttonParent.append(modalbuttonEndParent);
 
   modalbuttonEndParent.append(modalbuttonEnd);
   modalbuttonEnd.append(imageModalbuttonendLive);
