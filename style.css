@@ -304,6 +304,7 @@ body.menu-open {
 .project__section {
   display: grid;
   padding: 5rem 0 5rem 0;
+  background-color: #f7f7f9;
 }
 
 .project__card {
