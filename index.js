@@ -155,7 +155,6 @@ function createProjectsSection() {
 createProjectsSection();
 
 // Part 3 - Pop-up modal
-
 function openModal(project) {
   const modalContainer = document.getElementById('modal-container');
   modalContainer.innerHTML = ''; // Clear previous content
