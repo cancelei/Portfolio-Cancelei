@@ -166,6 +166,7 @@ function openModal(project) {
   modalContainer.innerHTML = ''; // Clear previous content
   modalContainer.classList.add('visible');
   modalContainer.classList.remove('none');
+  body.classList.add('modal-open');
 
   const modalContent = document.createElement('div');
   modalContent.classList.add('modal-content');
@@ -293,6 +294,7 @@ function openModal(project) {
     const modalContainer = document.getElementById('modal-container');
     modalContainer.classList.toggle('none');
     modalContainer.innerHTML = '';
+    body.classList.remove('modal-open');
   });
 }
 

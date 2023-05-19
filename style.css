@@ -848,3 +848,7 @@ body.menu-open {
 .none {
   visibility: hidden;
 }
+
+.modal-open {
+  overflow: hidden;
+}
