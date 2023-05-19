@@ -74,6 +74,12 @@ function createProjectsSection() {
     const projectElement = document.createElement('sub');
     projectElement.classList.add('project__card');
 
+    const projectIndex = projectsData.findIndex((item) => item === project);
+
+    if (projectIndex % 2 !== 0) {
+      projectElement.classList.add('reverse');
+    }
+
     const imageElement = document.createElement('img');
     imageElement.classList.add('card__img');
     imageElement.src = project.imageUrl;
