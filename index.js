@@ -1,4 +1,5 @@
 const menu = document.getElementById('menu');
+
 const { body } = document;
 
 function menuOpen() {
@@ -15,150 +16,151 @@ menuOpen();
 
 setTimeout(menuClose, 1);
 
-// Project Section Revamp will have 3 parts: 1) Data, 2) Main Creator Function, 3) Project Description Function.
+// Project Section Revamp will have 3 parts:
+
+// 1) Data, 2) Main Creator Function, 3) Project Description Function.
+
 // Part 1) Projects Section ONLY Data Input
 
 const projectsData = [
   {
-    title: "Tonic1",
-    detailsTitle: "CANOPY",
-    detailsText: "Back End Dev",
-    detailsYear: "2015",
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required",
+    title: 'Tonic1',
+    detailsTitle: 'CANOPY',
+    detailsText: 'Back End Dev',
+    detailsYear: '2015',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required',
     descriptionLong: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    imageUrl: "Assets/Snapshoot Portfoliop1.svg",
-    tags: ["HTML", "CSS", "Javascript"]
+    imageUrl: 'Assets/Snapshoot Portfoliop1.svg',
+    tags: ['HTML', 'CSS', 'Javascript'],
   },
   {
-    title: "Multi-Post Stories2",
-    detailsTitle: "CANOPY",
-    detailsText: "Back End Dev",
-    detailsYear: "2015",
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required",
+    title: 'Multi-Post Stories2',
+    detailsTitle: 'CANOPY',
+    detailsText: 'Back End Dev',
+    detailsYear: '2015',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required',
     descriptionLong: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    imageUrl: "Assets/Snapshoot Portfoliop2.svg",
-    tags: ["HTML", "CSS", "Javascript"]
+    imageUrl: 'Assets/Snapshoot Portfoliop2.svg',
+    tags: ['HTML', 'CSS', 'Javascript'],
   },
   {
-    title: "Tonic3",
-    detailsTitle: "CANOPY",
-    detailsText: "Back End Dev",
-    detailsYear: "2015",
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required",
+    title: 'Tonic3',
+    detailsTitle: 'CANOPY',
+    detailsText: 'Back End Dev',
+    detailsYear: '2015',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required',
     descriptionLong: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    imageUrl: "Assets/Snapshoot Portfoliop3.svg",
-    tags: ["HTML", "CSS", "Javascript"]
+    imageUrl: 'Assets/Snapshoot Portfoliop3.svg',
+    tags: ['HTML', 'CSS', 'Javascript'],
   },
   {
-    title: "Multi-Post Stories4",
-    detailsTitle: "CANOPY",
-    detailsText: "Back End Dev",
-    detailsYear: "2015",
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required",
+    title: 'Multi-Post Stories4',
+    detailsTitle: 'CANOPY',
+    detailsText: 'Back End Dev',
+    detailsYear: '2015',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required',
     descriptionLong: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    imageUrl: "Assets/Snapshoot Portfoliop4.svg",
-    tags: ["HTML", "CSS", "Javascript"]
-  }
-]
+    imageUrl: 'Assets/Snapshoot Portfoliop4.svg',
+    tags: ['HTML', 'CSS', 'Javascript'],
+  },
+];
 
 // Part 2) Project Section creation Function
 
 function createProjectsSection() {
-  const projectsContainer = document.getElementById("portfolio");
+  const projectsContainer = document.getElementById('portfolio');
 
-  projectsData.forEach(project => {
-    const projectElement = document.createElement("sub");
-    projectElement.classList.add("project__card");
+  projectsData.forEach((project) => {
+    const projectElement = document.createElement('sub');
+    projectElement.classList.add('project__card');
 
-    const imageElement = document.createElement("img");
-    imageElement.classList.add("card__img");
+    const imageElement = document.createElement('img');
+    imageElement.classList.add('card__img');
     imageElement.src = project.imageUrl;
     projectElement.appendChild(imageElement);
 
-    const cardDivisionElement = document.createElement("div");
-    cardDivisionElement.classList.add("desktop_card_division");
+    const cardDivisionElement = document.createElement('div');
+    cardDivisionElement.classList.add('desktop_card_division');
     projectElement.appendChild(cardDivisionElement);
 
-    const titleElement = document.createElement("h2");
-    titleElement.classList.add("card__title");
+    const titleElement = document.createElement('h2');
+    titleElement.classList.add('card__title');
     titleElement.textContent = project.title;
     cardDivisionElement.appendChild(titleElement);
 
-    const detailsElement = document.createElement("div");
-    detailsElement.classList.add("card__details");
+    const detailsElement = document.createElement('div');
+    detailsElement.classList.add('card__details');
     cardDivisionElement.appendChild(detailsElement);
 
-    const detailsTitleElement = document.createElement("h4");
-    detailsTitleElement.classList.add("details__title");
+    const detailsTitleElement = document.createElement('h4');
+    detailsTitleElement.classList.add('details__title');
     detailsTitleElement.textContent = project.detailsTitle;
     detailsElement.appendChild(detailsTitleElement);
 
-    const separatorElement1 = document.createElement("img");
-    separatorElement1.src = "Assets/Counterball.svg";
-    separatorElement1.alt = "separator";
+    const separatorElement1 = document.createElement('img');
+    separatorElement1.src = 'Assets/Counterball.svg';
+    separatorElement1.alt = 'separator';
     detailsElement.appendChild(separatorElement1);
 
-    const detailsTextElement1 = document.createElement("h4");
-    detailsTextElement1.classList.add("details__text");
+    const detailsTextElement1 = document.createElement('h4');
+    detailsTextElement1.classList.add('details__text');
     detailsTextElement1.textContent = project.detailsText;
     detailsElement.appendChild(detailsTextElement1);
 
-    const separatorElement2 = document.createElement("img");
-    separatorElement2.src = "Assets/Counterball.svg";
-    separatorElement2.alt = "separator";
+    const separatorElement2 = document.createElement('img');
+    separatorElement2.src = 'Assets/Counterball.svg';
+    separatorElement2.alt = 'separator';
     detailsElement.appendChild(separatorElement2);
 
-    const detailsYearElement = document.createElement("h4");
-    detailsYearElement.classList.add("details__year");
+    const detailsYearElement = document.createElement('h4');
+    detailsYearElement.classList.add('details__year');
     detailsYearElement.textContent = project.detailsYear;
     detailsElement.appendChild(detailsYearElement);
 
-    const descriptionElement = document.createElement("h4");
-    descriptionElement.classList.add("card__description");
+    const descriptionElement = document.createElement('h4');
+    descriptionElement.classList.add('card__description');
     descriptionElement.textContent = project.description;
     cardDivisionElement.appendChild(descriptionElement);
 
-    const tagParentElement = document.createElement("ul");
-    tagParentElement.classList.add("tag__parent");
+    const tagParentElement = document.createElement('ul');
+    tagParentElement.classList.add('tag__parent');
     cardDivisionElement.appendChild(tagParentElement);
 
-    project.tags.forEach(tag => {
-      const tagElement = document.createElement("li");
-      tagElement.classList.add("tag");
+    project.tags.forEach((tag) => {
+      const tagElement = document.createElement('li');
+      tagElement.classList.add('tag');
       tagElement.textContent = tag;
       tagParentElement.appendChild(tagElement);
     });
 
-    const buttonParentElement = document.createElement("div");
-    buttonParentElement.classList.add("about__button--parent");
+    const buttonParentElement = document.createElement('div');
+    buttonParentElement.classList.add('about__button--parent');
     cardDivisionElement.appendChild(buttonParentElement);
 
-    const buttonElement = document.createElement("button");
-    buttonElement.classList.add("button__std", "btn", "btn__project");
-    buttonElement.textContent = "See Project";
+    const buttonElement = document.createElement('button');
+    buttonElement.classList.add('button__std', 'btn', 'btn__project');
+    buttonElement.setAttribute('id', '#btnpro');
+    buttonElement.textContent = 'See Project';
     buttonParentElement.appendChild(buttonElement);
+
+    // buttonElement.addEventListener('click', function() {
+    //   openModal(project);
+    // });
 
     projectsContainer.appendChild(projectElement);
   });
+}
 
-  
-const seeProjectButtons = document.querySelectorAll('.btn__project');
-
-  seeProjectButtons.forEach(button => {
-    button.addEventListener('click', function() {
-      const projectIndex = Array.from(seeProjectButtons).indexOf(button);
-      const project = projectsData[projectIndex];
-  
-      // Call a function to open the modal and populate it with project data
-      openModal(project);
-    });
+// Last code that didnt work: window.addEventListener("load", createProjectsSection);
+createProjectsSection();
 
 // Part 3 - Pop-up modal
 
 function openModal(project) {
   const modalContainer = document.getElementById('modal-container');
   modalContainer.innerHTML = ''; // Clear previous content
-  modalContainer.classList.add("visible");
+  modalContainer.classList.add('visible');
+  modalContainer.classList.remove('none');
 
   const modalContent = document.createElement('div');
   modalContent.classList.add('modal-content');
@@ -167,11 +169,16 @@ function openModal(project) {
   modalHeader.classList.add('modal-header', 'flex', 'row', 'spacebtw');
   const titleElement = document.createElement('h2');
   titleElement.classList.add('card__title');
-  const closeButton = document.createElement('button');
-  closeButton.classList.add('close-button');
+  const closeButtonElement = document.createElement('div');
+  closeButtonElement.classList.add('close-button');
+  const closeImage = document.createElement('img');
+  closeImage.classList.add('close-img');
+  closeImage.src = 'Assets/Iconclosebutton.svg';
 
-  modalHeader.appendChild(titleElement);
-  modalHeader.appendChild(closeButton);
+  closeButtonElement.append(closeImage);
+  modalHeader.append(titleElement);
+  modalContent.append(modalHeader);
+  modalHeader.appendChild(closeButtonElement);
 
   const cardDetails = document.createElement('div');
   cardDetails.classList.add('card__details');
@@ -188,11 +195,17 @@ function openModal(project) {
   const detailsYearElement = document.createElement('h4');
   detailsYearElement.classList.add('details__year');
 
-  cardDetails.appendChild(detailsTitleElement);
-  cardDetails.appendChild(separator1);
-  cardDetails.appendChild(detailsTextElement);
+  cardDetails.append(detailsTitleElement);
+  cardDetails.append(separator1);
+  cardDetails.append(detailsTextElement);
   cardDetails.appendChild(separator2);
   cardDetails.appendChild(detailsYearElement);
+
+  modalContent.append(cardDetails);
+
+  const projectimageElement = document.createElement('img');
+  projectimageElement.classList.add('card__img');
+  projectimageElement.src = project.imageUrl;
 
   const descriptionLongElement = document.createElement('h4');
   descriptionLongElement.classList.add('descriptionLong');
@@ -202,6 +215,7 @@ function openModal(project) {
 
   modalContent.appendChild(modalHeader);
   modalContent.appendChild(cardDetails);
+  modalContent.appendChild(projectimageElement);
   modalContent.appendChild(descriptionLongElement);
   modalContent.appendChild(tagParentElement);
 
@@ -209,32 +223,70 @@ function openModal(project) {
 
   // Set the content of the modal using project data
   titleElement.textContent = project.title;
-  detailsTitleElement.textContent = project.details.title;
-  detailsTextElement.textContent = project.details.text;
-  detailsYearElement.textContent = project.details.year;
-  descriptionLongElement.textContent = project.longDescription;
+  detailsTitleElement.textContent = project.detailsTitle;
+  detailsTextElement.textContent = project.detailsText;
+  detailsYearElement.textContent = project.detailsYear;
+  descriptionLongElement.textContent = project.descriptionLong;
 
   // Create tag elements and append to tag parent element
-  project.tags.forEach(tag => {
+  project.tags.forEach((tag) => {
     const tagElement = document.createElement('li');
     tagElement.classList.add('tag');
     tagElement.textContent = tag;
     tagParentElement.appendChild(tagElement);
   });
 
+  const modalbuttonEndParent = document.createElement('div');
+  modalbuttonEndParent.classList.add('flex', 'row', 'gap');
+
+  const modalbuttonEnd = document.createElement('a');
+  modalbuttonEnd.href = 'github.com/pages';
+  modalbuttonEnd.target = '_blank';
+  modalbuttonEnd.classList.add('modal-button-end');
+  modalbuttonEnd.textContent = 'See live';
+
+  const modalbuttonEndGiuthub = document.createElement('a');
+  modalbuttonEndGiuthub.href = 'github.com/repo';
+  modalbuttonEndGiuthub.target = '_blank';
+  modalbuttonEndGiuthub.classList.add('modal-button-end');
+  modalbuttonEndGiuthub.textContent = 'See source';
+
+  const imageModalbuttonendLive = document.createElement('img');
+  imageModalbuttonendLive.classList.add('modalbuttonend-img');
+  imageModalbuttonendLive.src = 'Assets/Iconseelivebutton.svg';
+
+  const imageModalbuttonendGithub = document.createElement('img');
+  imageModalbuttonendGithub.classList.add('modalbuttonend-img');
+  imageModalbuttonendGithub.src = 'Assets/Vectorgithubbuttonimg.svg';
+
+  modalContent.append(modalbuttonEndParent);
+
+  modalbuttonEndParent.append(modalbuttonEnd);
+  modalbuttonEnd.append(imageModalbuttonendLive);
+
+  modalbuttonEndParent.append(modalbuttonEndGiuthub);
+  modalbuttonEndGiuthub.append(imageModalbuttonendGithub);
+
   // Show the modal
-  modalContainer.classList.add('show');
+  modalContainer.classList.add('visible');
+
+  const closeButton = document.querySelector('.close-button');
+
+  closeButton.addEventListener('click', () => {
+    const modalContainer = document.getElementById('modal-container');
+    modalContainer.classList.toggle('none');
+    modalContainer.innerHTML = '';
+  });
 }
 
-const closeButton = document.getElementById('close-button');
+const seeProjectButtons = document.querySelectorAll('.btn__project');
 
-closeButton.addEventListener('click', function() {
-  const modalContainer = document.getElementById('modal-container');
+seeProjectButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const projectIndex = Array.from(seeProjectButtons).indexOf(button);
+    const project = projectsData[projectIndex];
 
-  // Hide the modal
-  modalContainer.style.display = 'none';
+    // Call a function to open the modal and populate it with project data
+    openModal(project);
+  });
 });
-
-}
-
-window.addEventListener("load", createProjectsSection);
