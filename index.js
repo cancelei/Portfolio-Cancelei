@@ -309,3 +309,16 @@ seeProjectButtons.forEach((button) => {
     openModal(project);
   });
 });
+
+// Email Form Validation
+const form = document.getElementById('form');
+const email = document.getElementById('email');
+const lowerCaseRegexChecker = /[A-Z]/;
+
+form.addEventListener('submit', (e) => {
+  if (lowerCaseRegexChecker.test(email.value.trim())) {
+    e.preventDefault();
+    const errorMessage = document.querySelector('small');
+    errorMessage.classList.remove('display-none');
+  }
+});

@@ -845,10 +845,23 @@ body.menu-open {
   visibility: visible;
 }
 
+.display-none,
 .none {
   visibility: hidden;
 }
 
 .modal-open {
   overflow: hidden;
+}
+
+.show-error-message {
+  display: block;
+  width: 100%;
+  font-size: 1.6rem;
+  font-family: var(--font-poppins);
+  color: red;
+}
+
+small {
+  padding-bottom: 50px;
 }

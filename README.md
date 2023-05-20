@@ -8,24 +8,25 @@
 
 # 📗 Table of Contents
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [📝 License](#license)
+- [� Table of Contents](#-table-of-contents)
+- [📖 Portfolio Project Option 2](#-portfolio-project-option-2)
+  - [🛠 Built With Love and Passion](#-built-with-love-and-passion)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Install](#install)
+    - [Usage](#usage)
+    - [Run Linters (Testing)](#run-linters-testing)
+    - [Deployment](#deployment)
+  - [👥 Author ](#-author-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [📝 License ](#-license-)
 
 # 📖 Portfolio Project Option 2<a name="about-project"></a>
 
@@ -131,6 +132,11 @@ N/A
 - GitHub: [@cancelei](https://github.com/cancelei)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/gbannwart)
 
+👤 **ITALO**
+
+- GitHub: [@storres20](https://github.com/storres20)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/italo-lon-kan/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
@@ -165,6 +171,11 @@ Feel free to check the issues page, if there is no known issue, you can co-creat
 👤 **Dany AUGUSTIN**
 
 - Github [@amiralda](https://github.com/amiralda)
+
+
+👤 **Italo Lon kan**
+
+- Github [@storres20](https://github.com/storres20)
 
 
 To contribute, select or create a new branch and commit to it. The next step would be opening a Pull Request (PR).
