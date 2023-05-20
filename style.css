@@ -861,3 +861,7 @@ body.menu-open {
   font-family: var(--font-poppins);
   color: red;
 }
+
+small {
+  padding-bottom: 50px;
+}
