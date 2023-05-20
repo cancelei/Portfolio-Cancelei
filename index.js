@@ -322,3 +322,36 @@ form.addEventListener('submit', (e) => {
     errorMessage.classList.remove('display-none');
   }
 });
+
+// Local Data Storage
+const myLocalStorage = {
+  name: '',
+  email: '',
+  message: '',
+};
+
+form.addEventListener('change', () => {
+  if (myLocalStorage.name !== null) {
+    myLocalStorage.name = document.getElementById('name').value;
+  }
+  if (myLocalStorage.name !== null) {
+    myLocalStorage.email = document.getElementById('email').value;
+  }
+  if (myLocalStorage.name !== null) {
+    myLocalStorage.message = document.getElementById('message').value;
+  }
+
+  localStorage.setItem('storageString', JSON.stringify(myLocalStorage));
+});
+
+window.onload = () => {
+  let savedFormData = localStorage.getItem('contactFormInput');
+  savedFormData = JSON.parse(savedFormData);
+  // Check if the form data object is found on localStorage
+  if (savedFormData) {
+  // populate inputs values if data was found
+    document.getElementById('name').value = myLocalStorage.name;
+    document.getElementById('email').value = myLocalStorage.email;
+    document.getElementById('message').value = myLocalStorage.message;
+  }
+};
