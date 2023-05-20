@@ -331,19 +331,14 @@ const myLocalStorage = {
 };
 
 form.addEventListener('change', () => {
-  myLocalStorage.name = document.getElementById('name').value;
-  myLocalStorage.email = document.getElementById('email').value;
-  myLocalStorage.message = document.getElementById('message').value;
-
-  // Add code here
   if (nameValue !== null) {
-    myLocalStorage.name = nameValue;
+    myLocalStorage.name = document.getElementById('name').value;
   }
   if (emailValue !== null) {
-    myLocalStorage.email = emailValue;
+    myLocalStorage.email = document.getElementById('email').value;
   }
   if (messageValue !== null) {
-    myLocalStorage.message = messageValue;
+    myLocalStorage.message = document.getElementById('message').value;
   }
 
   localStorage.setItem('storageString', JSON.stringify(myLocalStorage));
