@@ -177,7 +177,8 @@ Feel free to check the issues page, if there is no known issue, you can co-creat
 
 - Github [@storres20](https://github.com/storres20)
 
-👤 **Andrea **
+
+👤 **Andrea Ortiz**
 
 - Github [@AndreaM2429](https://github.com/AndreaM2429)
 
