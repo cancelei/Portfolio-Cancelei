@@ -177,6 +177,9 @@ Feel free to check the issues page, if there is no known issue, you can co-creat
 
 - Github [@storres20](https://github.com/storres20)
 
+👤 **Andrea **
+
+- Github [@AndreaM2429](https://github.com/AndreaM2429)
 
 To contribute, select or create a new branch and commit to it. The next step would be opening a Pull Request (PR).
 
