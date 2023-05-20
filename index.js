@@ -323,7 +323,6 @@ form.addEventListener('submit', (e) => {
   }
 });
 
-
 // Local Data Storage
 const myLocalStorage = {
   name: '',
@@ -336,7 +335,7 @@ form.addEventListener('change', () => {
   myLocalStorage.email = document.getElementById('email').value;
   myLocalStorage.message = document.getElementById('message').value;
 
-// Add code here
+  // Add code here
 
   localStorage.setItem('storageString', JSON.stringify(myLocalStorage));
 });
