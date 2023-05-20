@@ -322,3 +322,24 @@ form.addEventListener('submit', (e) => {
     errorMessage.classList.remove('display-none');
   }
 });
+
+
+// Local Storage
+// const myLocalStorage = {
+//   name: '',
+//   email: '',
+//   message: '',
+// };
+
+// form.addEventListener('change', () => {
+//   myLocalStorage.name = document.getElementById('name').value;
+//   myLocalStorage.email = document.getElementById('email').value;
+//   myLocalStorage.message = document.getElementById('message').value;
+//   localStorage.setItem('storageString', JSON.stringify(myLocalStorage));
+// });
+
+// const storageObject = JSON.parse(localStorage.getItem('storageString'));
+
+// document.getElementById('name').value = storageObject.name;
+// document.getElementById('email').value = storageObject.email;
+// document.getElementById('message').value = storageObject.message;
