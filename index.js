@@ -336,6 +336,15 @@ form.addEventListener('change', () => {
   myLocalStorage.message = document.getElementById('message').value;
 
   // Add code here
+  if (nameValue !== null) {
+    myLocalStorage.name = nameValue;
+  }
+  if (emailValue !== null) {
+    myLocalStorage.email = emailValue;
+  }
+  if (messageValue !== null) {
+    myLocalStorage.message = messageValue;
+  }
 
   localStorage.setItem('storageString', JSON.stringify(myLocalStorage));
 });
