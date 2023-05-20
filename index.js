@@ -344,8 +344,14 @@ form.addEventListener('change', () => {
   localStorage.setItem('storageString', JSON.stringify(myLocalStorage));
 });
 
-const storageObject = JSON.parse(localStorage.getItem('storageString'));
-
-document.getElementById('name').value = storageObject.name;
-document.getElementById('email').value = storageObject.email;
-document.getElementById('message').value = storageObject.message;
+window.onload = () => {
+  let savedFormData = localStorage.getItem('contactFormInput');
+  savedFormData = JSON.parse(savedFormData);
+  // Check if the form data object is found on localStorage
+  if (savedFormData) {
+  // populate inputs values if data was found
+    document.getElementById('name').value = myLocalStorage.name;
+    document.getElementById('email').value = myLocalStorage.email;
+    document.getElementById('message').value = myLocalStorage.message;
+  }
+};
