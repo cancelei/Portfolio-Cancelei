@@ -331,13 +331,13 @@ const myLocalStorage = {
 };
 
 form.addEventListener('change', () => {
-  if (nameValue !== null) {
+  if (myLocalStorage.name !== null) {
     myLocalStorage.name = document.getElementById('name').value;
   }
-  if (emailValue !== null) {
+  if (myLocalStorage.name !== null) {
     myLocalStorage.email = document.getElementById('email').value;
   }
-  if (messageValue !== null) {
+  if (myLocalStorage.name !== null) {
     myLocalStorage.message = document.getElementById('message').value;
   }
 
