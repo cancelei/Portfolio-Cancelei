@@ -24,13 +24,13 @@ setTimeout(menuClose, 1);
 
 const projectsData = [
   {
-    title: 'Tonic',
-    detailsTitle: 'CANOPY',
-    detailsText: 'Back End Dev',
-    detailsYear: '2015',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required',
-    descriptionLong: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    imageUrl: 'Assets/Snapshoot Portfoliop1.svg',
+    title: 'To do List',
+    detailsTitle: 'Self',
+    detailsText: 'Front End Dev',
+    detailsYear: '2023',
+    description: 'A minimalistic to-do list app to keep track of your tasks, explore the app to know more!',
+    descriptionLong: "With a To Do list you can manage your daily tasks. It is simple to use in a way that you can add, delete and mark as done your tasks. You can also filter your tasks by status. It is a great way to keep track of your tasks and be more productive.",
+    imageUrl: 'Assets/Project To Do List.png',
     tags: ['HTML', 'CSS', 'Javascript'],
   },
   {
