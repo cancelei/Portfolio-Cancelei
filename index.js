@@ -1,3 +1,5 @@
+import projectsData from './projectsdata.js';
+
 const menu = document.getElementById('menu');
 
 const { body } = document;
@@ -15,57 +17,6 @@ function menuClose() {
 menuOpen();
 
 setTimeout(menuClose, 1);
-
-// Project Section Revamp will have 3 parts:
-
-// 1) Data, 2) Main Creator Function, 3) Project Description Function.
-
-// Part 1) Projects Section ONLY Data Input
-
-const projectsData = [
-  {
-    title: 'Tonic',
-    detailsTitle: 'CANOPY',
-    detailsText: 'Back End Dev',
-    detailsYear: '2015',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required',
-    descriptionLong: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    imageUrl: 'Assets/Snapshoot Portfoliop1.svg',
-    tags: ['HTML', 'CSS', 'Javascript'],
-  },
-  {
-    title: 'Multi-Post Stories',
-    detailsTitle: 'CANOPY',
-    detailsText: 'Back End Dev',
-    detailsYear: '2015',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required',
-    descriptionLong: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    imageUrl: 'Assets/Snapshoot Portfoliop2.svg',
-    tags: ['HTML', 'CSS', 'Javascript'],
-  },
-  {
-    title: 'Tonic',
-    detailsTitle: 'CANOPY',
-    detailsText: 'Back End Dev',
-    detailsYear: '2015',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required',
-    descriptionLong: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    imageUrl: 'Assets/Snapshoot Portfoliop3.svg',
-    tags: ['HTML', 'CSS', 'Javascript'],
-  },
-  {
-    title: 'Multi-Post Stories',
-    detailsTitle: 'CANOPY',
-    detailsText: 'Back End Dev',
-    detailsYear: '2015',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required',
-    descriptionLong: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    imageUrl: 'Assets/Snapshoot Portfoliop4.svg',
-    tags: ['HTML', 'CSS', 'Javascript'],
-  },
-];
-
-// Part 2) Project Section creation Function
 
 function createProjectsSection() {
   const projectsContainer = document.getElementById('portfolio');
@@ -148,16 +99,10 @@ function createProjectsSection() {
     buttonElement.setAttribute('id', '#btnpro');
     buttonElement.textContent = 'See Project';
     buttonParentElement.appendChild(buttonElement);
-
-    // buttonElement.addEventListener('click', function() {
-    //   openModal(project);
-    // });
-
     projectsContainer.appendChild(projectElement);
   });
 }
 
-// Last code that didnt work: window.addEventListener("load", createProjectsSection);
 createProjectsSection();
 
 // Part 3 - Pop-up modal
@@ -258,13 +203,13 @@ function openModal(project) {
   modalbuttonEndParent.classList.add('flex', 'row', 'gap');
 
   const modalbuttonEnd = document.createElement('a');
-  modalbuttonEnd.href = 'github.com/pages';
+  modalbuttonEnd.href = project.liveVersion;
   modalbuttonEnd.target = '_blank';
   modalbuttonEnd.classList.add('modal-button-end', 'btn');
   modalbuttonEnd.textContent = 'See live';
 
   const modalbuttonEndGiuthub = document.createElement('a');
-  modalbuttonEndGiuthub.href = 'github.com/repo';
+  modalbuttonEndGiuthub.href = project.githubLink;
   modalbuttonEndGiuthub.target = '_blank';
   modalbuttonEndGiuthub.classList.add('modal-button-end', 'btn');
   modalbuttonEndGiuthub.textContent = 'See source';
