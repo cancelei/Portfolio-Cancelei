@@ -18,12 +18,6 @@ menuOpen();
 
 setTimeout(menuClose, 1);
 
-// Project Section Revamp will have 3 parts:
-
-// 1) Data (NOW:imported), 2) Main Creator Function, 3) Project Description Function.
-
-// Part 2) Project Section creation Function
-
 function createProjectsSection() {
   const projectsContainer = document.getElementById('portfolio');
 
@@ -105,16 +99,10 @@ function createProjectsSection() {
     buttonElement.setAttribute('id', '#btnpro');
     buttonElement.textContent = 'See Project';
     buttonParentElement.appendChild(buttonElement);
-
-    // buttonElement.addEventListener('click', function() {
-    //   openModal(project);
-    // });
-
     projectsContainer.appendChild(projectElement);
   });
 }
 
-// Last code that didnt work: window.addEventListener("load", createProjectsSection);
 createProjectsSection();
 
 // Part 3 - Pop-up modal
