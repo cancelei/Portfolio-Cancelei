@@ -215,13 +215,13 @@ function openModal(project) {
   modalbuttonEndParent.classList.add('flex', 'row', 'gap');
 
   const modalbuttonEnd = document.createElement('a');
-  modalbuttonEnd.href = 'github.com/pages';
+  modalbuttonEnd.href = project.liveVersion;
   modalbuttonEnd.target = '_blank';
   modalbuttonEnd.classList.add('modal-button-end', 'btn');
   modalbuttonEnd.textContent = 'See live';
 
   const modalbuttonEndGiuthub = document.createElement('a');
-  modalbuttonEndGiuthub.href = 'github.com/repo';
+  modalbuttonEndGiuthub.href = project.githubLink;
   modalbuttonEndGiuthub.target = '_blank';
   modalbuttonEndGiuthub.classList.add('modal-button-end', 'btn');
   modalbuttonEndGiuthub.textContent = 'See source';
