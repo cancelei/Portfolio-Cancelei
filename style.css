@@ -1,3 +1,4 @@
+/* Reset and Global Styles */
 * {
   margin: 0;
   padding: 0;
@@ -11,8 +12,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Basic classes */
-
+/* Basic Utility Classes */
 .flex {
   display: flex;
 }
@@ -25,8 +25,13 @@ html {
   gap: 10px;
 }
 
+.spacebtw {
+  justify-content: space-between;
+}
+
+/* Modal Button Styles */
 .modal-button-end {
-  border: solid 2px #2230d2;
+  border: 2px solid #2230d2;
   border-radius: 10px;
   text-decoration: none;
   width: 48%;
@@ -38,15 +43,9 @@ html {
   gap: 15px;
 }
 
-.spacebtw {
-  justify-content: space-between;
-}
-
-/* Font> popping 700 400 600 500 */
-
+/* Mobile Navigation Styles */
 .mobile-nav-bar {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   padding: 10px;
   color: #7f8cff;
@@ -57,8 +56,6 @@ html {
   padding: 5%;
   background: transparent;
 }
-
-/* JS mobile menu class */
 
 .menu_basic {
   position: absolute;
@@ -81,8 +78,6 @@ body.menu-open {
 
 .mobile-menu-items {
   position: relative;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: 600;
   font-size: 2rem;
   line-height: 44px;
@@ -136,7 +131,6 @@ body.menu-open {
 }
 
 .close-button {
-  /* color: #67798E; */
   height: 33px;
   width: 33px;
 }
@@ -155,12 +149,11 @@ body.menu-open {
   margin: 10%;
 }
 
-/* Disables desktop menu on mobile */
-
 .menu-desk {
   display: none;
 }
 
+/* Introduction Section */
 .intro-section__headtitle {
   color: #6070ff;
   text-decoration: none;
@@ -170,7 +163,6 @@ body.menu-open {
   padding: 0 0 0 5%;
   background: #fff;
   align-self: center;
-  align-items: center;
   text-align: center;
   z-index: 0;
 }
@@ -182,7 +174,6 @@ body.menu-open {
 
   .menu-desk {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     padding: 2% 12% 2% 5%;
     background: #fff;
@@ -190,14 +181,11 @@ body.menu-open {
 
   .intro-section__menuoptions {
     display: flex;
-    flex-direction: row;
     justify-content: right;
     background: #fff;
   }
 
   .menuoptions {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 1rem;
     line-height: 1.3rem;
@@ -209,8 +197,7 @@ body.menu-open {
   }
 }
 
-/* Section Introduction */
-
+/* Introduction Section */
 .intro-section {
   background: white url(Assets/intro-background-mobile.svg) no-repeat center center;
   background-size: cover;
@@ -272,21 +259,15 @@ body.menu-open {
 
 @media screen and (min-width: 768px) {
   .intro-section__title {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 700;
     font-size: 48px;
     line-height: 60px;
     padding: 10% 0 0 15%;
   }
 
   .intro-section__subtitle {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
-    line-break: 30ch;
     padding: 2% 20% 0 15%;
   }
 
@@ -300,17 +281,16 @@ body.menu-open {
 }
 
 /* Project Section */
-
 .project__section {
   display: grid;
-  padding: 5rem 0 5rem 0;
+  padding: 5rem 0;
   background-color: #f7f7f9;
 }
 
 .project__card {
   margin: 5%;
   padding: 5%;
-  border: solid 1px #dfe1e6;
+  border: 1px solid #dfe1e6;
   border-radius: 1rem;
   background: #fff;
 }
@@ -324,8 +304,6 @@ body.menu-open {
 .desktop_card_division {
   background: white;
 }
-
-/* Project Section Part 2 - Card Structure, Flexbox and Reverse Direction */
 
 @media screen and (min-width: 768px) {
   .project__section {
@@ -347,7 +325,6 @@ body.menu-open {
   }
 
   .desktop_card_division {
-    background: #fff;
     margin: 2%;
     width: 48%;
     display: flex;
@@ -361,7 +338,6 @@ body.menu-open {
 }
 
 .card__title {
-  font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
@@ -414,7 +390,8 @@ body.menu-open {
 
   .popupimg {
     padding: 3%;
-    width: 100%;
+    width: 500px;
+    height: 50%;
   }
 
   .carddetails__popup {
@@ -451,7 +428,6 @@ body.menu-open {
 
 .card__description {
   color: #344563;
-  font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
@@ -462,12 +438,8 @@ body.menu-open {
 .tag__parent {
   display: flex;
   flex-direction: row;
-  margin: 5% 0 5% 0;
+  margin: 5% 0;
   background: #fff;
-}
-
-.social {
-  background: transparent;
 }
 
 .tag__parent > * {
@@ -475,11 +447,10 @@ body.menu-open {
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
-  letter-spacing: 0.03em;
   background: #ebedff;
   border-radius: 0.5rem;
   margin: 0 3% 0 0;
-  padding: 1.5% 4% 1.5% 4%;
+  padding: 1.5% 4%;
 }
 
 .button__std {
@@ -487,9 +458,7 @@ body.menu-open {
   font-size: 17px;
   line-height: 24px;
   color: #396df2;
-  align-items: left;
   text-align: center;
-  letter-spacing: 0.03em;
   border: 1px solid #6070ff;
   border-radius: 0.5rem;
   background: #fff;
@@ -517,20 +486,7 @@ body.menu-open {
   }
 
   .card__description {
-    font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
-  }
-
-  .tag {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 16px;
-  }
-
-  .button__std {
-    font-weight: 500;
-    font-size: 17px;
     line-height: 24px;
   }
 
@@ -542,7 +498,6 @@ body.menu-open {
 }
 
 /* Project Section Pop-up */
-
 .modal-container {
   padding: 5%;
   position: fixed;
@@ -556,16 +511,6 @@ body.menu-open {
   z-index: 0;
   background-color: rgba(193, 199, 208, 0.5);
   backdrop-filter: blur(10px);
-
-  /* width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.4);
-  z-index: 1000; */
 }
 
 .modal-content {
@@ -575,8 +520,6 @@ body.menu-open {
 }
 
 .descriptionLong {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
@@ -584,7 +527,6 @@ body.menu-open {
 }
 
 /* About Section Mobile */
-
 .about__section {
   padding: 25% 5% 25% 5%;
   border-top-right-radius: 5rem;
@@ -592,7 +534,6 @@ body.menu-open {
 }
 
 .about__title {
-  font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
@@ -603,7 +544,6 @@ body.menu-open {
 
 .about__subtitle {
   text-align: left;
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -645,7 +585,6 @@ body.menu-open {
 }
 
 .language {
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
@@ -724,7 +663,6 @@ body.menu-open {
 }
 
 /* Contact Form Section Mobile */
-
 .contact-form-section {
   background: #6070ff url(Assets/mobilecontactme-mobile-bg.svg) no-repeat center center;
   background-size: 60%;
@@ -735,37 +673,31 @@ body.menu-open {
 }
 
 .contact-title {
-  font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  align-items: center;
   text-align: center;
   color: #fff;
   background: transparent;
-  padding: 15% 0% 15% 0%;
+  padding: 15% 0;
 }
 
 .contact-paragraph {
-  font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
   text-align: center;
-  background: transparent;
   color: #ebebff;
   padding-bottom: 20%;
 }
 
 .emailname-input {
   width: 100%;
-  justify-content: center;
   background: white;
   margin-bottom: 5%;
   border-radius: 0.5rem;
   border: 1px solid #cfd8dc;
   padding: 2% 2% 3% 4%;
-  text-align: left;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
@@ -780,7 +712,6 @@ body.menu-open {
 }
 
 .form-parent :last-child {
-  justify-content: left;
   text-align: center;
   width: 40%;
 }
@@ -810,7 +741,6 @@ body.menu-open {
 
   .contact-desk {
     width: 50%;
-    background: transparent;
     margin-left: 25%;
     margin-right: 25%;
   }
@@ -820,7 +750,6 @@ body.menu-open {
   }
 
   .form-parent :last-child {
-    justify-content: left;
     text-align: center;
     width: 25%;
   }
@@ -858,7 +787,6 @@ body.menu-open {
   display: block;
   width: 100%;
   font-size: 1.6rem;
-  font-family: var(--font-poppins);
   color: red;
 }
 
