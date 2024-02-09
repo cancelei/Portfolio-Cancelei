@@ -41,25 +41,29 @@ Portfolio Building Project is a website that hosts professional and learning exp
   <summary>Client</summary>
   <ul>
     <li><a href="https://html.com/">HTML</a></li>
+    <li><a href="https://www.w3.org/">CSS</a></li>
   </ul>
 </details>
 
 <details>
   <summary>Server</summary>
   <ul>
-    <li>N/A</li>
+    <li>Github Pages</li>
   </ul>
 </details>
 
 <details>
 <summary>Database</summary>
   <ul>
-    <li>N/A</li>
+    <li>Only available in sub-project, showcased here.</li>
   </ul>
 </details>
 
 ### Key Features <a name="key-features"></a>
 
+-** New Project - 01/10/2023
+-** New Project - 11/15/2023
+-** New Project - 10/05/2023
 -** New Project - 06/24/2023
 - ** HTML with Nav, Intro, Recent Project, About Me Sections, Contact Form all for Mobile and Desktop Devices.**
 - ** Contact form using ThirdParty service called Formspree as a Backend service.**
@@ -73,7 +77,7 @@ Portfolio Building Project is a website that hosts professional and learning exp
 
 - [LINK](https://cancelei.github.io/Portfolio-Option-2/)
 
-- [Video Explaning the Projects and Challenges.](https://www.loom.com/share/df54b44e458441b681308ef3619ba489)
+- [Video Explaning the Projects and Challenges from May-2023](https://www.loom.com/share/df54b44e458441b681308ef3619ba489)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -125,8 +129,6 @@ N/A
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 👥 Author <a name="authors"></a>
-
-> Mention all of the collaborators of this project.
 
 👤 **Glauber Bannwart**
 
