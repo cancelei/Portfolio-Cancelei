@@ -35,6 +35,18 @@ const projectsData = [
     githubLink: 'https://github.com/cancelei/Space-Travelers-Hub', // Add your GitHub link here
     liveVersion: 'https://cancelei.github.io/Space-Travelers-Hub/', // Add your Live version link here
   },
+  {
+    title: 'NGO/Ruby4Good - Human Essentials',
+    detailsTitle: 'Rails',
+    detailsText: 'Full Stack Dev',
+    detailsYear: '2024',
+    description: 'Participation in an app around an American wide Diaper Bank.',
+    descriptionLong: "Working asynchronously with other developers using the technology that I want to specialize in. Receiving code reviews and interacting with experienced Developers.",
+    imageUrl: 'Assets/portfolioImages/human-essentials.png',
+    tags: ['Rails', 'ERB HTML', 'APIs', 'Postgresql'],
+    githubLink: 'https://github.com/cancelei/rails-human-essentials', // Add your GitHub link here
+    liveVersion: 'humanessentials.app', // Add your Live version link here
+  },
 ];
 
 export default projectsData;
